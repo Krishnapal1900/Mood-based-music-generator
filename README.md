@@ -27,5 +27,5 @@ A CSV file containing songs tagged with moods (e.g., happy, sad, energetic) was 
 Model Performance: The ResNet50V2 model outperformed the custom CNN model in both accuracy and robustness. Test accuracy reached approximately 85%, with a confusion matrix showing accurate classification across most mood categories.
 Future Improvements: Including a wider range of moods and integrating a dynamic playlist generator could further personalize recommendations.
 8. Conclusion
-This project successfully demonstrates mood detection from facial expressions and mood-based music recommendation. Future enhancements could include real-time mood tracking.
+This project successfully demonstrates mood detection from  and mood-based music recommendation. Future enhancements could include real-time mood tracking.
 
