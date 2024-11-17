@@ -1,0 +1,86 @@
+<Mood Based Music Generation>
+Submitted for 
+
+Statistical Machine Learning CSET211
+
+
+Submitted by:
+(E23CSEU0176)	Krishna Pal 
+(E23CSEU0178)     Anushka Singh
+
+
+
+Submitted to
+Dr. Sanchali Das
+
+
+
+July-Dec 2024
+SCHOOL OF COMPUTER SCIENCE AND ENGINEERING
+ 
+
+1.	Abstract
+This project presents a system that uses deep learning to predict emotions from facial expressions and recommends music that aligns with the detected emotion. A CNN and a fine-tuned ResNet50V2 model were trained on the FER2013 dataset for emotion classification. The system integrates emotion detection with a music recommendation module based on Spotify’s mood-labeled data. This project demonstrates the application of machine learning in enhancing user experiences through personalized recommendations.
+2.	Introduction
+The goal of this project is to create a system that connects human emotions with music recommendations. Music has been shown to have a profound impact on emotions, making it an ideal medium for enhancing mood or providing solace. By leveraging machine learning, we detect emotions from facial images and suggest music that resonates with the detected mood.
+The system uses:
+1.	A CNN for emotion classification.
+2.	A fine-tuned ResNet50V2 model for improved accuracy.
+3.	Spotify’s dataset for music recommendations based on mood categories (e.g., Calm, Happy, Sad).
+
+3.	Related Work (If Any)
+Various studies have explored emotion detection and music recommendation:
+1.	Emotion classification using FER datasets has been an active area of research.
+2.	Pre-trained models like ResNet have been widely used for transfer learning to improve classification accuracy.
+3.	Recommendation systems are increasingly using sentiment analysis and emotion detection for personalization.
+This project combines these aspects to build a unified system.
+
+4.	Methodology
+5.	Data Preprocessing:
+a.	The FER2013 dataset was used for training and testing.
+b.	Images were resized to 150x150 pixels for the CNN and 224x224 for ResNet50V2.
+c.	Data augmentation techniques (rotation, zoom, and flips) were applied to increase dataset variability.
+6.	Model Training:
+a.	CNN: A custom CNN model was designed and trained using a categorical cross-entropy loss function and Adam optimizer.
+b.	ResNet50V2: A pre-trained ResNet50V2 model was fine-tuned by freezing all layers except the last 50. Additional dense layers were added for classification.
+7.	Music Recommendation:
+a.	Spotify’s mood-labeled dataset was used to create a recommendation module.
+b.	Predicted emotions were mapped to mood categories (e.g., Angry → Calm music).
+8.	Prediction Workflow:
+a.	New facial images are preprocessed and passed through the trained models.
+b.	Detected emotions trigger mood-based song recommendations.
+
+9.	Hardware/Software Required
+Hardware:
+a.	System with at least 16GB RAM and a GPU (e.g., NVIDIA RTX 3060).
+Software:
+b.	Python 3.8 or later
+c.	TensorFlow 2.x
+d.	OpenCV for face detection
+e.	Matplotlib, Seaborn for visualization
+f.	Spotify dataset for music recommendations
+
+10.	Experimental Results 
+•  Model Evaluation:
+•	CNN achieved an accuracy of 60% on the test set.
+•	ResNet50V2 achieved an accuracy of 62% after fine-tuning.
+•  Confusion Matrix:
+•	Visualized for both models to assess classification performance.
+•  Music Recommendations:
+•	Examples of songs recommended for different detected emotions were presented.
+
+11.	Conclusions
+The project successfully demonstrated the integration of emotion detection with music recommendation. ResNet50V2 outperformed the custom CNN in accuracy, showcasing the effectiveness of transfer learning. The system provides a practical application for improving user experiences through emotion-aware technologies.
+12.	Future Scope
+13.	•  Expand the emotion categories to include subtle emotions (e.g., boredom, excitement).
+14.	•  Use real-time emotion detection via webcam input.
+15.	•  Integrate more sophisticated recommendation algorithms to account for user preferences.
+16.	GitHub Link of Your Complete Project
+<Create a Github account and add your code, dataset and readme file,PPT>
+<Past the link here>
+
+
+
+
+
+
